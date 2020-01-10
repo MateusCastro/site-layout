@@ -1,0 +1,30 @@
+* {
+  font-family: roboto, arial;
+}
+
+.content {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+  height: 90px;
+  margin: 0 auto;
+}
+
+nav .navbar-collapse .navbar-nav li a {
+  font-size: 22px;
+  color: #232323;
+  padding: 10px;
+}
+
+nav .navbar-collapse .navbar-nav li a:hover {
+  border-bottom: 1px solid #692fa5;
+  color: #692fa5;
+}
+
+nav .navbar-brand {
+  font-size: 30px;
+  color: #692fa5;
+}
