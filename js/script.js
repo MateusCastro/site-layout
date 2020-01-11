@@ -3,8 +3,8 @@ $(document).ready(function() {
     loop: true,
     nav: true,
     navText: [
-      "<img src='../images/esquerda.svg'>",
-      "<img src='../images/direita.svg'>"
+      "<img src='./images/esquerda.svg'>",
+      "<img src='./images/direita.svg'>"
     ],
     responsive: {
       0: {
