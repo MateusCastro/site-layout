@@ -17,29 +17,39 @@ header#main-header {
   z-index: 50;
   background-color: #ffffff;
   width: 100%;
-  border: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
 }
 
-header#main-header div nav .navbar-collapse .navbar-nav li a {
+header#main-header nav.navbar {
+  margin: 0 -15px;
+}
+
+header#main-header nav .navbar-collapse .navbar-nav li a {
   font-size: 22px;
   color: #232323;
   padding: 0;
   margin: 10px;
 }
 
-header#main-header div nav .navbar-collapse .navbar-nav li a:hover {
+header#main-header nav .navbar-collapse .navbar-nav li a.current {
   border-bottom: 1px solid #692fa5;
   color: #692fa5;
   margin-bottom: -1px;
 }
 
-header#main-header div nav .navbar-brand {
+header#main-header nav .navbar-collapse .navbar-nav li a:hover {
+  color: #692fa5;
+}
+
+header#main-header nav .navbar-brand {
   font-size: 30px;
   color: #692fa5;
 }
 
 section {
-  margin-top: 50px;
+  padding-top: 100px;
+  margin-top: -100px;
+  margin-bottom: 100px;
 }
 
 .section-tittle > h4 {
@@ -174,10 +184,6 @@ section#diferenciais div.diferenciais-itens > p {
   max-width: 200px;
 }
 
-section#personas {
-  margin-bottom: 100px;
-}
-
 section#personas div.content {
   max-width: 1030px;
   padding: 0 50px;
@@ -228,6 +234,56 @@ section#personas div.funcionario div.funcionario-card span {
   color: #999999;
 }
 
+footer#main-footer {
+  height: 400px;
+  margin-top: 100px;
+  position: relative;
+  background-color: #692fa5;
+}
+
+footer#main-footer div.footer-info {
+  max-width: 500px;
+  margin-top: 90px;
+  color: #ffffff;
+}
+
+footer#main-footer div.footer-info h4 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+footer#main-footerdiv.footer-info p {
+  font-size: 16px;
+}
+
+footer#main-footer div.footer-info div.like-container {
+  display: flex;
+  align-items: center;
+}
+
+footer#main-footer div.footer-info div.like-container span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+footer#main-footer div.footer-info div.like-container > div.image {
+  width: 55px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+footer#main-footer img#celular {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Customizar carrossel */
+
 .owl-prev,
 .owl-next {
   height: 100px;
@@ -262,6 +318,8 @@ section#personas div.funcionario div.funcionario-card span {
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #692fa5;
 }
+
+/* Customizar ScrollBar */
 
 ::-webkit-scrollbar {
   width: 7px;
@@ -330,6 +388,10 @@ section#personas div.funcionario div.funcionario-card span {
     padding: 15px 20px;
     border-top: 3px solid #692fa5;
   }
+
+  footer#main-footer div.footer-info {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -339,6 +401,26 @@ section#personas div.funcionario div.funcionario-card span {
   header#main-header {
     height: 60px;
     margin: 0 auto;
+  }
+
+  header#main-header nav.navbar {
+    margin: 0 -16px;
+    padding: 0 15px;
+  }
+
+  header#main-header nav.navbar div.navbar-collapse {
+    margin: 0 -15px;
+    border: 1px solid #d8d8d8;
+  }
+
+  header#main-header nav .navbar-collapse .navbar-nav li a.current {
+    margin-bottom: 9px;
+  }
+
+  section {
+    padding-top: 70px;
+    margin-top: -70px;
+    margin-bottom: 70px;
   }
 
   .section-tittle > h4 {
@@ -359,6 +441,20 @@ section#personas div.funcionario div.funcionario-card span {
 
   section#banner .text-container > h2 {
     font-size: 22px;
+    font-weight: bold;
+  }
+
+  footer#main-footer {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  footer#main-footer div.footer-info {
+    margin: auto;
+  }
+
+  footer#main-footer div.footer-info h4 {
+    font-size: 20px;
     font-weight: bold;
   }
 }
